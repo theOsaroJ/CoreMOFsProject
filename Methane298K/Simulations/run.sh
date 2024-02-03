@@ -41,7 +41,7 @@ Pres=$(awk 'FNR=='$Row' {print $1}' pressures.csv)
 mkdir $i
 cd $i
 #echo $Pres
-cp ../../condor-sh ../../raspa.sh ../*.cif ../simulation.input .
+cp ../../condor.sh ../../raspa.sh ../*.cif ../simulation.input .
 sed -i 's/INDEX/'${i}'/' condor-sh
 sed -i 's/INDEX/'${i}'/' raspa.sh
 sed -i 's/FFF/'${mof}'/' raspa.sh
