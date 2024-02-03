@@ -11,8 +11,8 @@ Forcefield                    UFF
 RemoveAtomNumberCodeFromLabel yes
 
 Framework 0
-FrameworkName *
-UnitCells
+FrameworkName FFF
+UnitCells UCA UCB UCC
 ExternalTemperature 298
 ExternalPressure XXX
 
