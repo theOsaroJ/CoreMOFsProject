@@ -14,7 +14,7 @@ cutoff =12.8
 mofs = os.listdir("./")
 mof_list=[]
 for i in range(len(mofs)):
-        if fnmatch.fnmatch(mofs[i], 'mof_'+'*'+'cif'):
+        if fnmatch.fnmatch(mofs[i], '*'+'cif'):
                 mof_list.append(mofs[i])
 for i in range(len(mof_list)):
         with open(mof_list[i], 'r') as cif:
